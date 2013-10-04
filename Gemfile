@@ -49,3 +49,7 @@ end
 
 # Heroku gems
 gem 'rails_12factor', group: :production
+
+gem 'therubyracer'
+gem 'jquery-rails'
+gem 'less-rails-bootstrap'
