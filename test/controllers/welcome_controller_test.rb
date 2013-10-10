@@ -5,5 +5,10 @@ class WelcomeControllerTest < ActionController::TestCase
     get :index
     assert_response :success
   end
-
+  
+  test "should get index has_hero" do
+    get :index
+    assert_not_nil assigns(:has_hero)
+    assert assigns(:has_hero)
+  end  
 end
