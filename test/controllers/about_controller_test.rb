@@ -21,5 +21,9 @@ class AboutControllerTest < ActionController::TestCase
     assert_template "about/index"
     assert_template layout: "layouts/application"
   end
-
+  
+  test "should get index title" do
+    get :index
+    assert_select 'title', "Datamond"
+  end
 end
