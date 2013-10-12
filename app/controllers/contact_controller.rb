@@ -5,7 +5,7 @@ class ContactController < ApplicationController
   end
   
   def create
-    @contact = Post.new(post_params)
+    @contact = Contact.new(contact_params)
     @contact.save
     redirect_to @contact
   end  
@@ -15,6 +15,13 @@ class ContactController < ApplicationController
   end
 
   def show
+    @page_name = 'contact'
     @contact = Contact.find(params[:id])	  
   end
+  
+private
+  def contact_params
+    params.require(:contact).permit(:name, :email, :message)
+  end
+  
 end

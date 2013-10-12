@@ -14,18 +14,16 @@
       
       <!--main content-->
       <div class="span9">
-        <h2 class="title-divider"><span>Contact <span class="de-em">Us</span></span> <small>Ways To Get In Touch</small></h2>
+        <h2 class="title-divider"><span>Thank you!</span></h2>
         <div class="row-fluid">
           <div class="span5">
-            <%= form_for :contact, url: {action: "create"}, html: {id: "contact-form"} do |f| %>
-              <%= f.text_field :name, class: "span11", placeholder: "Name" %>
-              <br />
-              <%= f.text_field :email, class: "span11", placeholder: "Email" %>
-              <br />
-              <%= f.text_area :message, rows: 12, class: "span11", placeholder: "Message" %>
-              <br />
-              <%= f.submit "Send Message", class: "btn btn-primary" %>
-            <% end %>
+            <h3>We have received the following message from you</h3>
+             <span class="span11">Name: <%= @contact.name %>
+             <br />
+             <span class="span11">Email: <%= @contact.email %>
+             <br />
+             <span class="span11">Message: <%= @contact.message %>
+             <br />
           </div>
           <div class="span7"> 
             <!--map & contact details-->
