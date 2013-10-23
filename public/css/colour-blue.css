@@ -138,7 +138,7 @@ a:hover {
 }
 .header .brand {
   /* replace logo colour */
-  background: url(../img/logo-blue.png) left top no-repeat;
+  background: url(../img/logo-blue-datamond.png) left top no-repeat;
 }
 .user-menu li a:hover,
 .user-menu li i {
