@@ -84,16 +84,13 @@
             <div class="span4">
               <div id="header-hidden-link"> <a href="#" class="show-hide" title="Click me you'll get a surprise" data-target=".header-hidden"><i></i>Open</a> </div>
               
-             
+              <% if @show_login %>
               <!--user menu-->
-              <!--
               <ul class="user-menu pull-right">
                 <li><i class="icon-edit"></i> <a href="register.htm" class="register">Register</a></li>
                 <li><i class="icon-signin"></i> <a href="#login-modal" class="login" data-toggle="modal">Login</a></li>
               </ul>
-              -->
               <!--login modal form-->
-              <!--
               <div id="login-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="login-modal-label">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
@@ -110,7 +107,7 @@
                 </div>
                 <div class="modal-footer"> <small>Not a member? <a href="#" class="signup">Sign up now!</a></small> <small><a href="#">Forgotten password?</a></small> </div>
               </div>
-              -->              
+              <% end %>              
             </div>
           </div>
         </div>
@@ -153,7 +150,7 @@
                   <li class="mega-menu-footer" role="menuitem"> <span class="row-fluid"> <span class="span7">Interested? Want to know more about our company? <strong>Download our FREE PDF Brouchure.</strong></span> <span class="span5"><a href="services.htm" class="btn more-link large pull-right"><i class="icon-cloud-download"></i> Get PDF Brouchure</a></span> </span> </li>
                 </ul>
               </li>
-              <li><a href="showcase.htm" class="top-level">Showcase</a></li>
+              <% if @show_menu_showcase %><li><a href="showcase.htm" class="top-level">Showcase</a></li><% end %>
               <li class="dropdown"> <a href="about.htm" class="dropdown-toggle top-level" id="about-drop" data-toggle="dropdown">About<b class="caret"></b></a> 
                 <!-- Dropdown Menu -->
                 <ul class="dropdown-menu" role="menu" aria-labelledby="about-drop">
@@ -162,19 +159,15 @@
                   <li role="menuitem"><a href="contact.htm" tabindex="-1" class="menu-item">Contact</a></li>
                 </ul>
               </li>
-              <li class="dropdown"> <a href="blog.htm" class="dropdown-toggle top-level" id="blog-drop" data-toggle="dropdown">Blog<b class="caret"></b></a> 
-                <!-- Dropdown Menu -->
-                <ul class="dropdown-menu pull-left" role="menu" aria-labelledby="blog-drop">
-                  <li role="menuitem"><a href="blog.htm" tabindex="-1" class="menu-item">Blog Roll</a></li>
-                  <li role="menuitem"><a href="blog-post.htm" tabindex="-1" class="menu-item">Blog Post</a></li>
-                </ul>
-              </li>
+              <li class="dropdown"> <a href="blog.htm" class="dropdown-toggle top-level" id="blog-drop" data-toggle="dropdown">Blog</a></li>
               <li class="dropdown"><a href="pages.htm" class="dropdown-toggle top-level" id="pages-drop" data-toggle="dropdown">More<b class="caret"></b></a> 
                 <!-- Dropdown Menu -->
                 <ul class="dropdown-menu pull-left" role="menu" aria-labelledby="pages-drop">
                   <li role="menuitem"><a href="pricing.htm" tabindex="-1" class="menu-item">Pricing</a></li>
+                  <% if @show_login %>
                   <li role="menuitem"><a href="login.htm" tabindex="-1" class="menu-item">Login</a></li>
                   <li role="menuitem"><a href="register.htm" tabindex="-1" class="menu-item">Register</a></li>
+                  <% end %>
                 </ul>
               </li>
             </ul>

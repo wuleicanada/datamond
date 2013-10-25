@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 
 # Use Postgres as the database for Active Record in production
-gem 'pg', group: :production
+gem "pg", "~> 0.17.0", group: :production
 
 # Use sqlite3 as the database for Active Record in development and test
 gem 'sqlite3', group: [:development, :test]

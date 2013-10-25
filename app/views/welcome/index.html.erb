@@ -47,6 +47,7 @@
     </div>
   </div>
   
+  <% if @show_showcase %>
   <!--Showcase-->
   <div class="showcase block">
     <div class="container">
@@ -120,6 +121,69 @@
       </div>
     </div>
   </div>
+  <% end %>
+  
+  <!--Customer testimonial & Latest Blog posts-->
+  <div class="testimonials block">
+    <div class="container">
+      <div class="row-fluid"> 
+        
+        <!--Customer testimonial-->
+        <div class="span6">
+          <h3 class="block-title">Testimonials</h3>
+          <blockquote>
+            <p>Our productivity & sales are up! Customers are happy & we couldn't be happier with this product!</p>
+            <img src="img/misc/charles-quote.png" alt="Charles Spencer Chaplin" /> <small><strong>Charles Chaplin</strong><br />
+            British comic actor</small> </blockquote>
+        </div>
+        
+        <!--Latest Blog posts-->
+        <div class="span6 blog-roll">
+          <h3 class="block-title">Latest From Our Blog</h3>
+          
+          <!-- Blog post 1-->
+          <div class="media row-fluid">
+            <div class="span1 hidden-phone"> 
+              <!-- Date desktop -->
+              <div class="date-wrapper"> <span class="date-m">Feb</span> <span class="date-d">01</span> </div>
+            </div>
+            <div class="span11">
+              <div class="media-body">
+                <h4 class="title media-heading"><a href="blog-post.htm">amet urna integer urna enim, sit arcu pid in nec?</a></h4>
+                
+                <!-- Meta details mobile -->
+                <ul class="inline meta muted visible-phone">
+                  <li><i class="icon-calendar"></i> <span class="visible-desktop">Created:</span> Fri 1st Feb 2013</li>
+                  <li><i class="icon-user"></i> <a href="#">Joe</a></li>
+                </ul>
+                <p>Ut <strong>commodo ullamcorper risus nec</strong> mattis. Morbi tincidunt posuere turpis eu laoreet. Nulla facilisi. Aenean at massa leo. Vestibulum in varius arcu. <a href="blog-post.htm">Read more <i class="icon-angle-right"></i></a></p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Blog post 2 -->
+          <div class="media row-fluid">
+            <div class="span1 hidden-phone"> 
+              <!-- Date desktop -->
+              <div class="date-wrapper"> <span class="date-m">Jan</span> <span class="date-d">17</span> </div>
+            </div>
+            <div class="span11">
+              <div class="media-body">
+                <h4 class="title media-heading"><a href="blog-post.htm">a nec in sed hac ultrices cursus</a></h4>
+                
+                <!-- Meta details mobile -->
+                <ul class="inline meta muted visible-phone">
+                  <li><i class="icon-calendar"></i> <span class="visible-desktop">Created:</span> Thu 17th Jan 2013</li>
+                  <li><i class="icon-user"></i> <a href="#">Joe</a></li>
+                </ul>
+                <p>Nam risus magna, fringilla sit amet blandit viverra, dignissim eget est. Aenean at massa leo. Vestibulum in varius arcu. <a href="blog-post.htm">Read more <i class="icon-angle-right"></i></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
   
   <!-- Services -->
   <div class="services block">
@@ -199,65 +263,6 @@
     </div>
   </div>
   
-  <!--Customer testimonial & Latest Blog posts-->
-  <div class="testimonials block">
-    <div class="container">
-      <div class="row-fluid"> 
-        
-        <!--Customer testimonial-->
-        <div class="span6">
-          <h3 class="block-title">Testimonials</h3>
-          <blockquote>
-            <p>Our productivity & sales are up! Customers are happy & we couldn't be happier with this product!</p>
-            <img src="img/misc/charles-quote.png" alt="Charles Spencer Chaplin" /> <small><strong>Charles Chaplin</strong><br />
-            British comic actor</small> </blockquote>
-        </div>
-        
-        <!--Latest Blog posts-->
-        <div class="span6 blog-roll">
-          <h3 class="block-title">Latest From Our Blog</h3>
-          
-          <!-- Blog post 1-->
-          <div class="media row-fluid">
-            <div class="span1 hidden-phone"> 
-              <!-- Date desktop -->
-              <div class="date-wrapper"> <span class="date-m">Feb</span> <span class="date-d">01</span> </div>
-            </div>
-            <div class="span11">
-              <div class="media-body">
-                <h4 class="title media-heading"><a href="blog-post.htm">amet urna integer urna enim, sit arcu pid in nec?</a></h4>
-                
-                <!-- Meta details mobile -->
-                <ul class="inline meta muted visible-phone">
-                  <li><i class="icon-calendar"></i> <span class="visible-desktop">Created:</span> Fri 1st Feb 2013</li>
-                  <li><i class="icon-user"></i> <a href="#">Joe</a></li>
-                </ul>
-                <p>Ut <strong>commodo ullamcorper risus nec</strong> mattis. Morbi tincidunt posuere turpis eu laoreet. Nulla facilisi. Aenean at massa leo. Vestibulum in varius arcu. <a href="blog-post.htm">Read more <i class="icon-angle-right"></i></a></p>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Blog post 2 -->
-          <div class="media row-fluid">
-            <div class="span1 hidden-phone"> 
-              <!-- Date desktop -->
-              <div class="date-wrapper"> <span class="date-m">Jan</span> <span class="date-d">17</span> </div>
-            </div>
-            <div class="span11">
-              <div class="media-body">
-                <h4 class="title media-heading"><a href="blog-post.htm">a nec in sed hac ultrices cursus</a></h4>
-                
-                <!-- Meta details mobile -->
-                <ul class="inline meta muted visible-phone">
-                  <li><i class="icon-calendar"></i> <span class="visible-desktop">Created:</span> Thu 17th Jan 2013</li>
-                  <li><i class="icon-user"></i> <a href="#">Joe</a></li>
-                </ul>
-                <p>Nam risus magna, fringilla sit amet blandit viverra, dignissim eget est. Aenean at massa leo. Vestibulum in varius arcu. <a href="blog-post.htm">Read more <i class="icon-angle-right"></i></a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
+  
 </div>
