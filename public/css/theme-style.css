@@ -200,7 +200,7 @@ a:focus {
   background-image: url(../img/backgrounds/buildings.png);
 }
 .city {
-  background-image: url(../img/backgrounds/city.png);
+  background-image: url(../img/backgrounds/city_.png);
 }
 .metro {
   background-image: url(../img/backgrounds/metro.png);
@@ -209,7 +209,7 @@ a:focus {
  * Zones & Regions
  *-------------------------------------------------- */
 #background-wrapper {
-  background-color: #000000;
+  background-color: #00a8cc;
   background-position: left top;
   background-repeat: no-repeat;
   background-attachment: fixed;
