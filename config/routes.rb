@@ -20,7 +20,8 @@ Datamond::Application.routes.draw do
   get 'blog-post.htm' => 'blog_post#index'
   get 'pricing.htm' => 'pricing#index'
   get 'login.htm' => 'login#index'
-  get 'register.htm' => 'register#index'  
+  get 'register.htm' => 'register#index'
+  get 'consulting.htm' => 'consulting#index'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
