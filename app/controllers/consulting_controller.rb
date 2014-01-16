@@ -1,5 +1,14 @@
 class ConsultingController < ApplicationController
-  def index
-    @page_name = 'consulting'
-  end	    
+  
+  def database
+  end
+  
+  def software_development
+  end
+  
+  def website
+  end
+  
+  def network
+  end      
 end

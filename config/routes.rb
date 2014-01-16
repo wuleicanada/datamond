@@ -1,4 +1,10 @@
 Datamond::Application.routes.draw do
+  
+  get "solutions/finance"
+  get "consulting/database"
+  get "consulting/software_development"
+  get "consulting/website"
+  get "consulting/network"
   get "welcome/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -21,7 +27,6 @@ Datamond::Application.routes.draw do
   get 'pricing.htm' => 'pricing#index'
   get 'login.htm' => 'login#index'
   get 'register.htm' => 'register#index'
-  get 'consulting.htm' => 'consulting#index'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
